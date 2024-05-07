@@ -25,7 +25,7 @@ public class Pokedex_ADD {
     @FXML
     private Label success_label;
     @FXML
-    private TextField name_text, type_text, height_text,weight_text,prev_text,next_text,image_path_text;
+    private TextField name_text, type_text, height_text,weight_text,prev_text,next_text,image_path_text,fav_text;
     @FXML
     private TextArea description_text;
 
@@ -44,8 +44,8 @@ public class Pokedex_ADD {
         Connection connectDB = connectNow.getConnection();
 
         PreparedStatement pstmt = connectDB.prepareStatement("INSERT INTO `pokedex`.`creatures` " +
-                "(`creature_name`, `creature_description`, `creature_image`,`creature_type`,`height`,`weight`, `prev_gen`, `next_gen`)" +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                "(`creature_name`, `creature_description`, `creature_image`,`creature_type`,`height`,`weight`, `prev_gen`, `next_gen`,`favourite`)" +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)");
 
         pstmt.setString(1,name_text.getText());
         pstmt.setString(2,description_text.getText());
@@ -55,6 +55,7 @@ public class Pokedex_ADD {
         pstmt.setString(6,weight_text.getText());
         pstmt.setString(7,prev_text.getText());
         pstmt.setString(8,next_text.getText());
+        pstmt.setString(9,fav_text.getText());
         // Executing the statement
         pstmt.executeUpdate();
         System.out.println("Record inserted successfully");

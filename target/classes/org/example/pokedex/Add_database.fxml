@@ -48,17 +48,17 @@
             <Font name="Calibri Bold" size="48.0" />
          </font>
       </Label>
-      <TextField fx:id="name_text" layoutX="309.0" layoutY="94.0" style="-fx-border-color: #3399ff;" />
-      <TextField fx:id="type_text" layoutX="309.0" layoutY="129.0" style="-fx-border-color: #3399ff;" />
-      <TextField fx:id="height_text" layoutX="309.0" layoutY="164.0" style="-fx-border-color: #3399ff;" />
-      <TextField fx:id="weight_text" layoutX="309.0" layoutY="199.0" style="-fx-border-color: #3399ff;" />
-      <TextArea fx:id="description_text" layoutX="49.0" layoutY="309.0" prefHeight="169.0" prefWidth="200.0" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="name_text" layoutX="309.0" layoutY="94.0" promptText="Name" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="type_text" layoutX="309.0" layoutY="129.0" promptText="Type" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="height_text" layoutX="309.0" layoutY="164.0" promptText="Height" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="weight_text" layoutX="309.0" layoutY="199.0" promptText="Weight" style="-fx-border-color: #3399ff;" />
+      <TextArea fx:id="description_text" layoutX="49.0" layoutY="309.0" prefHeight="169.0" prefWidth="200.0" promptText="Description" style="-fx-border-color: #3399ff;" />
       <Label fx:id="height31" alignment="CENTER" layoutX="72.0" layoutY="274.0" prefHeight="35.0" prefWidth="153.0" text="Description" textFill="#4a1313">
          <font>
             <Font name="Calibri Bold" size="25.0" />
          </font>
       </Label>
-      <Label fx:id="height311" alignment="CENTER" layoutX="342.0" layoutY="321.0" prefHeight="35.0" prefWidth="153.0" text="Evolution" textFill="#4a1313">
+      <Label fx:id="height311" alignment="CENTER" layoutX="343.0" layoutY="348.0" prefHeight="35.0" prefWidth="153.0" text="Evolution" textFill="#4a1313">
          <font>
             <Font name="Calibri Bold" size="25.0" />
          </font>
@@ -68,15 +68,15 @@
             <Font name="Calibri Bold" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="image_path_text" layoutX="309.0" layoutY="234.0" style="-fx-border-color: #3399ff;" />
-      <TextField fx:id="prev_text" layoutX="267.0" layoutY="405.0" style="-fx-border-color: #3399ff;" />
-      <Label fx:id="height3111" alignment="CENTER" layoutX="266.0" layoutY="356.0" prefHeight="35.0" prefWidth="153.0" text="Prev Generation" textFill="#4a1313">
+      <TextField fx:id="image_path_text" layoutX="309.0" layoutY="234.0" promptText="Path" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="prev_text" layoutX="267.0" layoutY="405.0" promptText="Prev gen" style="-fx-border-color: #3399ff;" />
+      <Label fx:id="height3111" alignment="CENTER" layoutX="266.0" layoutY="372.0" prefHeight="35.0" prefWidth="153.0" text="Prev Generation" textFill="#4a1313">
          <font>
             <Font name="Calibri Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="next_text" layoutX="434.0" layoutY="405.0" style="-fx-border-color: #3399ff;" />
-      <Label fx:id="height31111" alignment="CENTER" layoutX="433.0" layoutY="356.0" prefHeight="35.0" prefWidth="153.0" text="Next Generation" textFill="#4a1313">
+      <TextField fx:id="next_text" layoutX="434.0" layoutY="405.0" promptText="Next gen" style="-fx-border-color: #3399ff;" />
+      <Label fx:id="height31111" alignment="CENTER" layoutX="433.0" layoutY="372.0" prefHeight="35.0" prefWidth="153.0" text="Next Generation" textFill="#4a1313">
          <font>
             <Font name="Calibri Bold" size="20.0" />
          </font>
@@ -98,6 +98,12 @@
             <Font name="Calibri Bold" size="28.0" />
          </font>
       </Label>
+      <Label fx:id="height321" alignment="CENTER" layoutX="273.0" layoutY="313.0" prefHeight="35.0" prefWidth="153.0" text="Favourite" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fav_text" layoutX="424.0" layoutY="317.0" promptText="Favourite/--" style="-fx-border-color: #3399ff;" />
    </children>
    <effect>
       <InnerShadow blurType="GAUSSIAN" choke="0.3" height="66.81" radius="32.445" width="64.97">
