@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #80bfff; -fx-border-color: #ffff00; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pokedex.Pokedex_Dashboard">
+   <children>
+      <Button alignment="CENTER" layoutX="164.0" layoutY="255.0" mnemonicParsing="false" onAction="#switchtoPokedexDatabaseScene" prefHeight="59.0" prefWidth="272.0" style="-fx-border-color: #1a8cff; -fx-border-width: 3px;" text="Pokedex Database" textFill="#147779">
+         <font>
+            <Font name="Calibri Bold" size="29.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.17" height="60.57" radius="29.4175" width="59.1">
+               <color>
+                  <Color red="0.035599999129772186" green="0.1820685714483261" blue="0.8899999856948853" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button alignment="CENTER" layoutX="164.0" layoutY="341.0" mnemonicParsing="false" onAction="#switchtoAddDatabaseScene" prefHeight="59.0" prefWidth="272.0" style="-fx-border-color: #1a8cff; -fx-border-width: 3px;" text="Add Creature" textFill="#177a7c">
+         <font>
+            <Font name="Calibri Bold" size="29.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.17" height="60.57" radius="29.4175" width="59.1">
+               <color>
+                  <Color red="0.26343998312950134" green="0.8899999856948853" blue="0.035599999129772186" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="135.0" fitWidth="133.0" layoutX="234.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pokeball.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" layoutX="33.0" layoutY="25.0" mnemonicParsing="false" onAction="#switchtoPokedexWelcomeScene" prefHeight="28.0" prefWidth="54.0" style="-fx-border-color: red; -fx-border-width: 3px;" text="Back">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow blurType="GAUSSIAN" choke="0.26" height="67.41" radius="32.4725" width="64.48">
+         <color>
+            <Color red="0.037828948348760605" green="0.9078947305679321" blue="0.8788925409317017" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

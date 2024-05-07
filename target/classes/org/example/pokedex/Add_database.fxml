@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #99ccff; -fx-border-color: #66ffff; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pokedex.Pokedex_ADD">
+   <children>
+      <Button alignment="CENTER" layoutX="29.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchtoPokedexDashboardScene" prefHeight="28.0" prefWidth="54.0" style="-fx-border-color: #ff1a1a;" text="Back" textFill="#bc0808">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.03" height="29.79" radius="12.93" width="23.93">
+               <color>
+                  <Color red="0.9210526347160339" green="0.012792397290468216" blue="0.012792397290468216" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Label fx:id="height" alignment="CENTER" layoutX="149.0" layoutY="93.0" prefHeight="35.0" prefWidth="99.0" text="Name" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="height1" alignment="CENTER" layoutX="149.0" layoutY="128.0" prefHeight="35.0" prefWidth="99.0" text="Type" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="height2" alignment="CENTER" layoutX="149.0" layoutY="163.0" prefHeight="35.0" prefWidth="99.0" text="Height" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="height3" alignment="CENTER" layoutX="149.0" layoutY="198.0" prefHeight="35.0" prefWidth="99.0" text="Weight" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="CreatureName" alignment="CENTER" layoutX="138.0" layoutY="25.0" prefHeight="55.0" prefWidth="343.0" text="ADD to Pokedex" textFill="#213aa1">
+         <font>
+            <Font name="Calibri Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name_text" layoutX="309.0" layoutY="94.0" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="type_text" layoutX="309.0" layoutY="129.0" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="height_text" layoutX="309.0" layoutY="164.0" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="weight_text" layoutX="309.0" layoutY="199.0" style="-fx-border-color: #3399ff;" />
+      <TextArea fx:id="description_text" layoutX="49.0" layoutY="309.0" prefHeight="169.0" prefWidth="200.0" style="-fx-border-color: #3399ff;" />
+      <Label fx:id="height31" alignment="CENTER" layoutX="72.0" layoutY="274.0" prefHeight="35.0" prefWidth="153.0" text="Description" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="height311" alignment="CENTER" layoutX="342.0" layoutY="321.0" prefHeight="35.0" prefWidth="153.0" text="Evolution" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="height32" alignment="CENTER" layoutX="122.0" layoutY="231.0" prefHeight="35.0" prefWidth="153.0" text="Image Path" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="image_path_text" layoutX="309.0" layoutY="234.0" style="-fx-border-color: #3399ff;" />
+      <TextField fx:id="prev_text" layoutX="267.0" layoutY="405.0" style="-fx-border-color: #3399ff;" />
+      <Label fx:id="height3111" alignment="CENTER" layoutX="266.0" layoutY="356.0" prefHeight="35.0" prefWidth="153.0" text="Prev Generation" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="next_text" layoutX="434.0" layoutY="405.0" style="-fx-border-color: #3399ff;" />
+      <Label fx:id="height31111" alignment="CENTER" layoutX="433.0" layoutY="356.0" prefHeight="35.0" prefWidth="153.0" text="Next Generation" textFill="#4a1313">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="367.0" layoutY="443.0" mnemonicParsing="false" onAction="#addPokemon" prefHeight="35.0" prefWidth="114.0" style="-fx-border-color: #3399ff; -fx-border-width: 2px;" text="ADD" textFill="#091eba">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.18" height="35.65" radius="20.2575" width="47.38">
+               <color>
+                  <Color red="0.018400000408291817" green="0.3275200128555298" blue="0.9200000166893005" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Label fx:id="success_label" alignment="CENTER" layoutX="261.0" layoutY="273.0" prefHeight="38.0" prefWidth="319.0" textFill="#213aa1">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow blurType="GAUSSIAN" choke="0.3" height="66.81" radius="32.445" width="64.97">
+         <color>
+            <Color red="0.016812864691019058" green="0.9078947305679321" blue="0.8336378931999207" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>
